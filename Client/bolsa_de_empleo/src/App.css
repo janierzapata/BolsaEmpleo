@@ -1,0 +1,63 @@
+.navbar-nav {
+  flex-direction: row !important;
+}
+
+.navbar {
+  height: 7vh;
+}
+
+.nav-item {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px !important;
+}
+
+a {
+  color: white !important;
+  text-align: center;
+}
+
+.active {
+  background-color: gray !important;
+  border-radius: 15px;
+}
+
+/*------------------ Not Found ------------------*/
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #c6c6c6;
+}
+
+h1 {
+  color: #1e90ff;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.linkReturn {
+  color: #1e90ff !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.linkReturn:hover {
+  color: #007acc !important;
+}
+
+.card {
+  height: 100%;
+}
+
+.description {
+  height: 83% !important;
+}

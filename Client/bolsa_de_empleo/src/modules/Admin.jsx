@@ -64,7 +64,6 @@ export const Admin = () => {
 
   const handleUpdate = () => {
     ciudadanosService.actualizarCiudadano(ciudadano).then((response) => {
-      console.log("response", response);
       response.status === 200 &&
         Swal.fire({
           icon: "success",

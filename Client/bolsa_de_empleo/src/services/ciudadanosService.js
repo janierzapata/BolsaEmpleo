@@ -47,12 +47,10 @@ const actualizarCiudadano = (ciudadano) => {
 };
 
 const eliminarCiudadano = (documento) => {
-  console.log("eliminarCiudadano", documento);
   return new Promise((resolve, reject) => {
     axios
       .delete(`${server}Ciudadano/Eliminar?identificacion=${documento}`)
       .then((data) => {
-        console.log("respondio el eliminar", data);
         resolve(data);
       })
       .catch((error) => {

@@ -22,7 +22,6 @@ const aplicarVacante = (vacante, documento) => {
         `${server}Vacante/postularCiudadano?codigoVacante=${vacante}&numeroIdentificacion=${documento}`
       )
       .then((data) => {
-        console.log("respondio el aplicar", data);
         resolve(data);
       })
       .catch((error) => {

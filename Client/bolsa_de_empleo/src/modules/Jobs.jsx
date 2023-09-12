@@ -32,7 +32,6 @@ export const Jobs = () => {
     vacantesService
       .getVacantes()
       .then((response) => {
-        console.log("response jobs", response);
         setJobs(response.data);
       })
       .catch((error) => {
@@ -56,7 +55,6 @@ export const Jobs = () => {
     vacantesService
       .aplicarVacante(job.codigo, ciudadano.numeroDocumento)
       .then((response) => {
-        console.log("response", response);
         response.status === 200
           ? response.data.msg ===
             "El ciudadano ya esta postulado en una vacante"
@@ -92,7 +90,6 @@ export const Jobs = () => {
     vacantesService
       .cancelarVacante(job.codigo, ciudadano.numeroDocumento)
       .then((response) => {
-        console.log("response", response);
         response.status === 200
           ? Swal.fire({
               icon: "success",
@@ -207,11 +204,9 @@ export const Jobs = () => {
           <select
             ref={selectRef}
             onChange={(e) => {
-              console.log(e.target.value);
               let ciud = ciudadanos.find(
                 (ciudadano) => ciudadano.id === parseInt(e.target.value)
               );
-              console.log("ciud", ciud);
               setCiudadano(ciud);
             }}
             className="form-select"

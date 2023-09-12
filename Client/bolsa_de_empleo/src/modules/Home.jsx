@@ -52,7 +52,6 @@ export const Home = () => {
   };
 
   const validateForm = () => {
-    console.log("ciudadano", ciudadano);
     if (
       ciudadano.nombres === "" ||
       ciudadano.apellidos === "" ||
@@ -91,8 +90,6 @@ export const Home = () => {
 
         setCiudadano(initialForm);
         selectRef.current.value = 0;
-
-        console.log("response", response);
       })
       .catch((error) => {
         console.log("error", error);

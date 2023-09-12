@@ -188,7 +188,7 @@ export const Jobs = () => {
       >
         <h4>¿Está seguro que desea cancelar aplicacion?</h4>
         <p>
-          {`Se cancelara la aplicacion a la vacante para el usuario xxxxxxx`}
+          {`Se cancelara la aplicacion a la vacante para el usuario ${ciudadano.nombres} ${ciudadano.apellidos}`}
         </p>
       </Modal>
       <Modal

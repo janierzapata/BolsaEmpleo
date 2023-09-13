@@ -183,7 +183,7 @@ export const Home = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="fechaNacimiento" className="form-label">
-              Fecha Nacimiento (dd/mm/aaaa)
+              Fecha Nacimiento (AAAA-MM-DD)
             </label>
             <input
               type="fechaNacimiento"
